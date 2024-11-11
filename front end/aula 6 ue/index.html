@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1=5, nota2=7, nota3=7, nota4=8;
+        var media = (nota1+nota2+nota3+nota4)/4;
+        document.write ("Média: "+media.toFixed(2));
+        if(media>=6){
+        document.write(" - Aprovação");
+        
+        if (media==10){
+            document.write ("<br> Parabéns pela aprovação");}
+        }
+        else if (media>=5){
+            document.write ("<br> Atenção!! Você esta em recuperação");
+        }
+        else {
+            document.write ("<br> Você está reprovado tente estudar mais para a próxima vez")
+        }
+    </script>
+</body>
+</html>

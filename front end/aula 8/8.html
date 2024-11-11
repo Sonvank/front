@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>teste dee função - Média</h3>
+    <script>
+        function CalcMedia(nota1, nota2, nota3){
+            var media=0;
+            if (nota1<nota2 && nota1<nota3){
+                media = (nota2+nota3)/2;
+            } else if (nota2<nota1 && nota2<nota3){
+                media = (nota1+nota3)/2;
+            } else {
+                 media = (nota1+nota2)/2;
+            }
+            return media;
+        }
+        var n1 = parseFloat (prompt("Informe primeira nota: "));
+        var n2 = parseFloat (prompt("Informe segunda nota: "));
+        var n3 = parseFloat (prompt("Informe terceira nota: "));
+        document.write ("nota 1: "+ n1 + "<br>");
+        document.write ("nota 2: "+ n2 + "<br>");
+        document.write ("nota 3: "+ n3 + "<br>");
+        document.write ("soma das notas:"+ (n1+n2+n3) + "<br>");
+        document.write ("Média: "+CalcMedia(n1, n2, n3) + "<br>");
+
+    </script>
+</body>
+</html>

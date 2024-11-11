@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+    var Pessoa= function (nome) {
+    var idade;
+    var nota1;
+    var nota2;
+    var nota3;
+    var media;
+    return {
+    setNome: function (novoNome){
+        nome=novoNome;
+        },
+    getNome: function (){
+        return nome;
+        },
+    setIdade: function (novaIdade) {
+        idade=novaIdade;
+        },
+    getIdade: function (){
+        return idade;
+        },
+    
+    setNota1: function (novaNota1) {
+        nota1=novaNota1;
+        },
+    setNota2: function (novaNota2) {
+         nota2=novaNota2;
+            },
+    setNota3: function (novaNota3) {
+            nota3=novaNota3;
+            },
+    getNota1: function (){
+        return nota1;
+         },
+     getNota2: function (){
+        return nota2;
+         },    
+    getNota3: function (){
+        return nota3;
+         
+    },
+    getMedia: function (){
+        return (nota1 + nota2 + nota3) / 3;
+    }
+}
+}
+    var aluno1=Pessoa ("AAS");
+    aluno1.setIdade (30);
+    aluno1.setNota1 (10);
+    aluno1.setNota2 (8);
+    aluno1.setNota3 (9);
+    aluno1.getMedia ();
+    document.write ("Aluno:"+ aluno1.getNome()
+      + "<br>Nota 1:" +aluno1.getNota1()
+      + "<br>Nota 2:" +aluno1.getNota2()
+      + "<br>Nota 3:" +aluno1.getNota3()
+     + "<br>Média: " + aluno1.getMedia());
+
+</script>
+</body>
+</html>
